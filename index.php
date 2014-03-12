@@ -5,17 +5,17 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="pt-br"> <!--<![endif]-->
     <head>
-        <?php include("_assets/inc/head.php"); ?>
+        <?php include("_include/head.php"); ?>
     <body class="jscrollpane-universal">
         <!--[if lte IE 8]><p class="chromeframe">Você está usando um navegador desatualizado. <a href="http://browsehappy.com/">Atualize seu navegador</a> ou <a href="http://www.google.com/chromeframe/?redirect=true">instale o Google Chrome</a> para melhor experiência com este site.</p> <![endif]-->
 		
         <div id="wrapper">
-            <?php include("_assets/inc/header.php"); ?>
+            <?php include("_include/header.php"); ?>
             <div id="content">
                 
             </div>
         </div>
-        <?php include("_assets/inc/footer.php"); ?>
+        <?php include("_include/footer.php"); ?>
 		
 		<!-- Scripts -->
         <!--script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script-->
