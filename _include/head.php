@@ -10,7 +10,6 @@
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
 
-<link rel="stylesheet" href="_assets/css/normalize.min.css">
-<link rel="stylesheet" href="_assets/css/main.css">
+<link rel="stylesheet" href="_assets/css/style.css">
 
 <script src="_assets/js/vendor/modernizr-2.6.2.min.js"></script>
