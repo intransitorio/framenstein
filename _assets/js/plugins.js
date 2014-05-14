@@ -37,7 +37,7 @@
     // Determina os plugins que serão carregados pelo nome da pasta onde está localizado
         $(document).ready(function() {
             Modernizr.load({
-                load: getPathPlugins( [ 'carouFredSel', 'Fancybox', 'jScrollPane', 'Mouse-wheel', 'Roundabout', 'touchSwipe'] ),
+                load: getPathPlugins( [ 'jQueryValidation', 'jQueryMaskedInput', 'carouFredSel', 'Fancybox', 'jScrollPane', 'Mouse-wheel', 'Roundabout', 'touchSwipe'] ),
                 complete: function(){
                     initPage();                             
                 }
