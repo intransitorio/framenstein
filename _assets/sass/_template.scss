@@ -1,0 +1,39 @@
+/* ==========================================================================
+   Plugins
+========================================================================== */    
+
+    /* Estilos Específicos deste site */
+
+/* ==========================================================================
+   @ Template
+========================================================================== */
+
+    html, body, #wrapper {height: 100%;}
+    body > #wrapper      {height: auto; min-height: 100%;}
+
+
+    #wrapper{
+        position: relative;
+    }        
+    #header {
+        position: static;
+        height: 160px
+        }
+
+    #content {
+        padding-bottom: 320px; /* footer height */
+        }
+
+
+    #footer {
+        background: #516f40;
+        position: relative;
+        margin-top: -320px; /* footer height */
+        height: 320px;
+        clear:both;
+    }
+
+/* ==========================================================================
+   INTERNAS
+========================================================================== */
+
