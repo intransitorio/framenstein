@@ -50,6 +50,8 @@
 
     textarea {
         resize: none;
+        padding: 0;
+        border: 0;
     }
     textarea, input {outline: none; }
 
@@ -64,6 +66,10 @@
     }
     :-ms-input-placeholder {/* Internet Explorer 10+ */
         color: inherit;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
     }
     li{
         list-style: none;
