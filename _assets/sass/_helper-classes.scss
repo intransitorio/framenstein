@@ -2,10 +2,18 @@
 /* ==========================================================================
    Helper classes
 ========================================================================== */
-   
+    .mobile{
+        .containter{
+            width: 640px;
+        }
+    }
+    .desktop{
+        .container{
+            width: 960px;
+        }
+    }
     .container {
         margin: 0 auto;
-        width: 960px;
         position: relative;
     }
 
