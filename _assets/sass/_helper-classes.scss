@@ -3,7 +3,7 @@
    Helper classes
 ========================================================================== */
     .mobile{
-        .containter{
+        .container{
             width: 640px;
         }
     }
@@ -61,7 +61,7 @@
     }
 
     .loader{
-        background: #000;
+        background: #682368;
         @include transition(opacity 0.5s ease-in-out, 0s width 1s linear, 0s height 1s linear);
         position: fixed;
         top: 0;

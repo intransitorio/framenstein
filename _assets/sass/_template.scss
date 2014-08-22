@@ -15,23 +15,12 @@
     #wrapper{
         position: relative;
     }        
-    #header {
-        position: static;
-        height: 160px
-        }
 
     #content {
-        padding-bottom: 320px; /* footer height */
-        }
-
-
-    #footer {
-        background: #516f40;
-        position: relative;
-        margin-top: -320px; /* footer height */
-        height: 320px;
-        clear:both;
+        @extend .container;
+        
     }
+
 
 /* ==========================================================================
    INTERNAS
