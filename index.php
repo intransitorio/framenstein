@@ -6,6 +6,7 @@
 <html lang="pt-br"> <!--<![endif]-->
     <head>
         <?php include("_include/head.php"); ?>
+    </head>
     <body class="desktop ou mobile?" onload="$('.loader').removeClass('loading');">
         <div class="loader loading"></div>
         <!--[if lte IE 9]><p class="chromeframe">Você está usando um navegador desatualizado. <a href="http://browsehappy.com/">Atualize seu navegador</a> ou <a href="http://www.google.com/chromeframe/?redirect=true">instale o Google Chrome</a> para melhor experiência com este site.</p> <![endif]-->
