@@ -1,5 +1,3 @@
-<!--script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script-->
-<script>window.jQuery || document.write('<script src="_assets/js/vendor/jquery-2.1.1.min.js"><\/script>')</script>
-
-<script src="_assets/plugins/load/carouFredSel/Fancybox/index.js"></script>
+<script>window.jQuery || document.write('<script src="_assets/js/vendor/jquery-2.1.3.min.js"><\/script>')</script>
+<script src="_assets/plugins/load/carouFredSel/chosen/Fancybox/index.js"></script>
 <script src="_assets/js/main.js"></script>
