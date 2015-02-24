@@ -1,7 +1,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=640, user-scalable=no" />
-<title>Framenstein Framework</title>
+<title>Fleming Medicina</title>
 <meta name="description" content="">
 
 <!-- Facebook Open Graphs -->
@@ -18,6 +18,6 @@
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
 
-<link rel="stylesheet" href="_assets/css/style.css?v=<?php echo mt_rand() ?>">
+<link rel="stylesheet" href="assets/css/style.css?v=<?php echo mt_rand() ?>">
 
-<script src="_assets/js/vendor/modernizr-2.6.2.min.js"></script>
+<script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>

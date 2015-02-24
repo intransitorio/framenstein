@@ -78,7 +78,7 @@
 <IfModule mod_rewrite.c>
     RewriteEngine on
 
-    RewriteRule ^_assets/plugins/load/(.*)/index.js$ _assets/plugins/index.php [NC]
+    RewriteRule ^assets/plugins/load/(.*)/index.js$ assets/plugins/index.php [NC]
 
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME}\.php -f
