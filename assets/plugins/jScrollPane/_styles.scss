@@ -125,7 +125,7 @@
             height: 100%;
         }
 
-        .jspVerticalBar .jspArrow:focus
+        .jspVerticalBar .jspArrow:focus, .jspScrollable
         {
             outline: none;
         }

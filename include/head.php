@@ -11,10 +11,6 @@
 <meta property="og:image" content="Link da imagem 200x200"/>
 <meta property="og:type" content="website"/>
 
-<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-152x152.png"> <!-- ios Retina & Android devices icon-->
-<meta name="msapplication-TileColor" content="#fff"> <!-- W8 Tile Color -->
-<meta name="msapplication-TileImage" content="apple-touch-icon-144x144.png"> <!-- w8 & ios non-retine icon -->
-<!-- favicon.ico will load automaticaly -->
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
 
