@@ -1,54 +1,41 @@
 /*! Caroufredsel */
     // Padrões para o funcionamento do Caroufredsel
-    .list_carousel {
-        position: relative;
-        ul{
+        .carrossel-wrapper {
+            position: relative;
             overflow: hidden;
-            padding: 0;
-            margin: 0;
-            list-style: none;
-            display: block;
-            li{
+            .carrossel{
+                width: 100%;
+                height: 100%;
+                .item{
+                    display: block;
+                    float: left;
+                    position: relative;                
+                }
+            }
+            .prev, .next {
                 display: block;
-                float: left;
-                position: relative;
-
-            };
-        };
-        .prev, .next {
-            display: block;
-            position: absolute;
-            cursor: pointer;
+                position: absolute;
+                cursor: pointer;
+            }
+            .next {
+                @include transform (scaleX(-1));
+            }
         }
-        .next {
-            @include transform (scaleX(-1));
-        };
-    }
 
-    // Padrões de estilos especificos para cada banner
-    .nome-do-wrapper-do-seu-carousel{
-        .list_carousel {
-            width: 940px;
-            height: 340px;
-            ul{
-                height: 340px;
-                li{
-                    width: 940px;
-                    height: 340px;
-                };
-            };
+    // Padrões de estilos especificos para cada banner    
+        .carrossel-wrapper.carrossel-fundo {
+            width: 100%;
+            height: 100%;        
             .prev, .next {
                 width: 10px;
                 height: 18px;
-                background: url(../img/carousel-nav.png);
-                background-repeat: no-repeat;
+                background: url(../img/carousel-nav.png) no-repeat;
                 top: 162px;
-            };
+            }
             .prev {
                 left: -20px;
-            };
+            }
             .next {
                 right: -20px;
-            };
+            }
         }
-    }

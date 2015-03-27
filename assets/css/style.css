@@ -363,56 +363,46 @@ td, th {
 
 /*! Caroufredsel */
 /* line 3, ../plugins/carouFredSel/_styles.scss */
-.list_carousel {
-  position: relative; }
-/* line 5, ../plugins/carouFredSel/_styles.scss */
-.list_carousel ul {
-  overflow: hidden;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: block; }
-/* line 11, ../plugins/carouFredSel/_styles.scss */
-.list_carousel ul li {
+.carrossel-wrapper {
+  position: relative;
+  overflow: hidden; }
+/* line 6, ../plugins/carouFredSel/_styles.scss */
+.carrossel-wrapper .carrossel {
+  width: 100%;
+  height: 100%; }
+/* line 9, ../plugins/carouFredSel/_styles.scss */
+.carrossel-wrapper .carrossel .item {
   display: block;
   float: left;
   position: relative; }
-/* line 18, ../plugins/carouFredSel/_styles.scss */
-.list_carousel .prev, .list_carousel .next {
+/* line 15, ../plugins/carouFredSel/_styles.scss */
+.carrossel-wrapper .prev, .carrossel-wrapper .next {
   display: block;
   position: absolute;
   cursor: pointer; }
-/* line 23, ../plugins/carouFredSel/_styles.scss */
-.list_carousel .next {
+/* line 20, ../plugins/carouFredSel/_styles.scss */
+.carrossel-wrapper .next {
   -webkit-transform: scaleX(-1);
   -moz-transform: scaleX(-1);
   -ms-transform: scaleX(-1);
   -o-transform: scaleX(-1);
   transform: scaleX(-1); }
 
-/* line 30, ../plugins/carouFredSel/_styles.scss */
-.nome-do-wrapper-do-seu-carousel .list_carousel {
-  width: 940px;
-  height: 340px; }
-/* line 33, ../plugins/carouFredSel/_styles.scss */
-.nome-do-wrapper-do-seu-carousel .list_carousel ul {
-  height: 340px; }
-/* line 35, ../plugins/carouFredSel/_styles.scss */
-.nome-do-wrapper-do-seu-carousel .list_carousel ul li {
-  width: 940px;
-  height: 340px; }
-/* line 40, ../plugins/carouFredSel/_styles.scss */
-.nome-do-wrapper-do-seu-carousel .list_carousel .prev, .nome-do-wrapper-do-seu-carousel .list_carousel .next {
+/* line 26, ../plugins/carouFredSel/_styles.scss */
+.carrossel-wrapper.carrossel-fundo {
+  width: 100%;
+  height: 100%; }
+/* line 29, ../plugins/carouFredSel/_styles.scss */
+.carrossel-wrapper.carrossel-fundo .prev, .carrossel-wrapper.carrossel-fundo .next {
   width: 10px;
   height: 18px;
-  background: url(../img/carousel-nav.png);
-  background-repeat: no-repeat;
+  background: url(../img/carousel-nav.png) no-repeat;
   top: 162px; }
-/* line 47, ../plugins/carouFredSel/_styles.scss */
-.nome-do-wrapper-do-seu-carousel .list_carousel .prev {
+/* line 35, ../plugins/carouFredSel/_styles.scss */
+.carrossel-wrapper.carrossel-fundo .prev {
   left: -20px; }
-/* line 50, ../plugins/carouFredSel/_styles.scss */
-.nome-do-wrapper-do-seu-carousel .list_carousel .next {
+/* line 38, ../plugins/carouFredSel/_styles.scss */
+.carrossel-wrapper.carrossel-fundo .next {
   right: -20px; }
 
 /*! Chosen */
