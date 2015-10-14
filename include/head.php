@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=640, user-scalable=no" />
+<meta name="viewport" content="width=1024, user-scalable=yes" />
 <title>Framenstein Framework</title>
 <meta name="description" content="">
 
