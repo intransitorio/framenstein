@@ -50,10 +50,15 @@
 
     textarea {
         resize: none;
-        padding: 0;
-        border: 0;
     }
-    textarea, input {outline: none; }
+    textarea, input {
+        border: 0;
+        margin: 0;
+        padding: 0;
+        display: block;
+        outline: none;
+        background: transparent;
+    }
 
     ::-webkit-input-placeholder {/* WebKit browsers */
         color: inherit;
