@@ -2,25 +2,25 @@
    Plugins
 ========================================================================== */    
 
-    /* Estilos Específicos deste site */
+	/* Estilos Específicos deste site */
 
 /* ==========================================================================
    @ Template
 ========================================================================== */
 
-    html, body{height: 100%;}
-    body > #wrapper{height: auto; min-height: 100%; overflow-x: hidden}
+	html, body{height: 100%;}
+	body > #wrapper{height: auto; min-height: 100%; overflow-x: hidden}
 
 
-    #wrapper{
-        position: relative;
-    }        
-    
+	#wrapper{
+		position: relative;
+	}        
+	
 
-    #content {
-        @extend .container;
-        
-    }
+	#content {
+		@extend .container;
+		
+	}
 
 
 /* ==========================================================================
