@@ -42,6 +42,16 @@ $(window).on("load", function() {
 			 }
 			}
 		});    
+	// Slide Me Carrossel
+		$(".inicia_slideme").slideme({
+            arrows     : false,
+            autoslide  : true,
+            interval   : 6000,
+            loop       : true,
+            speed      : 1000,
+            transition : 'fade',
+            autoslideHoverStop : false,
+		});
 	// Padrão Fancybox
 		$(".fancybox").fancybox({
 			padding     : 0,
