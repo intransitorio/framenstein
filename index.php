@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<<<<<<< HEAD
     <head>
         <?php include("include/head.php"); ?>
     </head>
@@ -688,4 +689,26 @@
 
 
     <div id="global-zeroclipboard-html-bridge" class="global-zeroclipboard-container" title="" style="position: absolute; left: 0px; top: -9999px; width: 15px; height: 15px; z-index: 999999999;" data-original-title="Copy to clipboard">      <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="global-zeroclipboard-flash-bridge" width="100%" height="100%">         <param name="movie" value="/assets/flash/ZeroClipboard.swf?noCache=1462583745645">         <param name="allowScriptAccess" value="sameDomain">         <param name="scale" value="exactfit">         <param name="loop" value="false">         <param name="menu" value="false">         <param name="quality" value="best">         <param name="bgcolor" value="#ffffff">         <param name="wmode" value="transparent">         <param name="flashvars" value="trustedOrigins=getbootstrap.com.br%2C%2F%2Fgetbootstrap.com.br%2Chttp%3A%2F%2Fgetbootstrap.com.br">         <embed src="/assets/flash/ZeroClipboard.swf?noCache=1462583745645" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="100%" height="100%" name="global-zeroclipboard-flash-bridge" allowscriptaccess="sameDomain" allowfullscreen="false" type="application/x-shockwave-flash" wmode="transparent" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="trustedOrigins=getbootstrap.com.br%2C%2F%2Fgetbootstrap.com.br%2Chttp%3A%2F%2Fgetbootstrap.com.br" scale="exactfit">                </object></div><svg xmlns="http://www.w3.org/2000/svg" width="1140" height="500" viewBox="0 0 1140 500" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="57" style="font-weight:bold;font-size:57pt;font-family:Arial, Helvetica, Open Sans, sans-serif">Thirdslide</text></svg></body>
+=======
+	<head>
+		<?php include("include/head.php"); ?>
+	</head>
+	<body class="desktop" onload="$('.loader').removeClass('loading');">
+		<?php include("include/loader.php"); ?>
+		<div class="carrossel-wrapper carrossel-fundo">
+			<div class="carrossel">
+				<img class="item" src="assets/img/bg/home-1.jpg" alt="">
+				<img class="item" src="assets/img/bg/home-2.jpg" alt="">
+				<img class="item" src="assets/img/bg/home-3.jpg" alt="">
+			</div>
+		</div>
+		<div id="wrapper">
+			<?php include("include/header.php"); ?>
+			<div id="content">
+			</div>
+		</div>
+		<?php include("include/footer.php"); ?>        
+		<?php include("include/scripts.php"); ?>
+	</body>
+>>>>>>> 9619520df88866acb31b755a9e5db355fe4cf1e7
 </html>

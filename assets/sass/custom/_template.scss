@@ -2,16 +2,17 @@
    Plugins
 ========================================================================== */
 
-    /* Estilos Específicos deste site */
+	/* Estilos Específicos deste site */
 
 /* ==========================================================================
    @ Template
 ========================================================================== */
 
-    html, body{height: 100%;}
-    body > #wrapper{height: auto; min-height: 100%; overflow-x: hidden}
+	html, body{height: 100%;}
+	body > #wrapper{height: auto; min-height: 100%; overflow-x: hidden}
 
 
+<<<<<<< HEAD:assets/sass/custom/_template.scss
     #wrapper{
         position: relative;
     }
@@ -21,6 +22,17 @@
         @extend .container;
 
     }
+=======
+	#wrapper{
+		position: relative;
+	}        
+	
+
+	#content {
+		@extend .container;
+		
+	}
+>>>>>>> 9619520df88866acb31b755a9e5db355fe4cf1e7:assets/styles/_template.scss
 
 
 /* ==========================================================================
