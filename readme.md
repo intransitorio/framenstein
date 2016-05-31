@@ -5,11 +5,11 @@ This project is the product of many years of iterative development and combined 
 
 ## Quick start
 
-Clone the git repo - `git clone git://github.com/intransitorio/framenstein.git` - or [download it](https://github.com/intransitorio/framenstein/zipball/master)
+Install the framework and the components via terminal - `bower install intransitorio/framenstein` - or [download it](https://github.com/intransitorio/framenstein/zipball/master)
 
 ## Instructions to use the sass version of Framenstrein
-
-To run this branch of the framework you nedd Compass, to be able to run Compass you nedd Ruby.
+* to do
+<!-- To run this branch of the framework you nedd Compass, to be able to run Compass you nedd Ruby.
 
 ### Windows
 
@@ -28,7 +28,7 @@ To run this branch of the framework you nedd Compass, to be able to run Compass 
 
 After the setup you just nedd to navigate to your working directory and rum ```compass watch```
 
-Thats it! Have fun!
+Thats it! Have fun! -->
 
 ## Features
 
