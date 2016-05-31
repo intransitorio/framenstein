@@ -9,26 +9,6 @@ Install the framework and the components via terminal - `bower install intransit
 
 ## Instructions to use the sass version of Framenstrein
 * to do
-<!-- To run this branch of the framework you nedd Compass, to be able to run Compass you nedd Ruby.
-
-### Windows
-
-1. Download [RubyInstaller](http://rubyinstaller.org/downloads/);
-2. Intall [Compass](http://compass-style.org/install/)
-
-### OSX
-
-1. Update Ruby environment
-2. Intall [Compass](http://compass-style.org/install/)
-
-### Linux
-
-1. Install [RVM](http://rvm.io)
-2. Intall [Compass](http://compass-style.org/install/)
-
-After the setup you just nedd to navigate to your working directory and rum ```compass watch```
-
-Thats it! Have fun! -->
 
 ## Features
 
