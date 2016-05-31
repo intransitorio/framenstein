@@ -1,0 +1,9 @@
+/vendor
+/node_modules
+/bower_components
+/.sass-cache
+/files
+Homestead.yaml
+Homestead.json
+.env
+.htaccess
