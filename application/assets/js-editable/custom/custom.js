@@ -1,0 +1,1 @@
+//=require js-editable/custom/partial/main.js
