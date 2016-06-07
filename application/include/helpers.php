@@ -65,9 +65,10 @@ if( !function_exists('url') )
     function url($path='')
     {
         $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS']!="off" ? 'https://' : 'http://';
-        $domain   = substr($_SERVER['SERVER_NAME'], -1)=='/' ? $_SERVER['SERVER_NAME'] : ($_SERVER['SERVER_NAME'].'/');
+        $domain   = substr($_SERVER['SERVER_NAME'], -1)=='/' ? substr($_SERVER['SERVER_NAME'], 0, strlen($_SERVER['SERVER_NAME'])) : ($_SERVER['SERVER_NAME']);
+        $port     = $_SERVER['SERVER_PORT'];
         $request  = join('/', array_intersect(explode('/', root_path()), explode('/', $_SERVER ['REQUEST_URI'])));
-        $url      = $protocol . str_replace('//', '/', $domain . $request);
+        $url      = $protocol . str_replace('//', '/', $domain . ($port!='80'?':'.$port:'') .'/'. $request);
 
         return $url . ($path!=''?'/'.$path:'');
     }
