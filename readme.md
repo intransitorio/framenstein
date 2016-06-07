@@ -5,13 +5,14 @@ This project is the product of many years of iterative development and combined 
 
 ## Quick start
 
-Install the framework via terminal cloning the github repo - `git clone https://github.com/intransitorio/framenstein.git` - or [download it](https://github.com/intransitorio/framenstein/zipball/master)
+Install the framework via terminal cloning the github repo:<br>
+`git clone https://github.com/intransitorio/framenstein.git` - or [download it]https://github.com/intransitorio/framenstein/zipball/master)
 
 ## Instructions to set the project name in htaccess
-in htaccess.example search for framenstein and rename it to your project
+In htaccess.example search for framenstein and rename it to your project
 
 ## Instructions install all the default components
-open the project folder in terminal and run the command below:
+Open the project folder in terminal and run the command below: <br>
 `cp .htaccess.example .htaccess && cd application/ && cp .env.example .env && bower install && sudo npm install`
 
 ## Features
