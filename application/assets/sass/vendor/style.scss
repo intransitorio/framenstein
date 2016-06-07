@@ -1,4 +1,7 @@
 @import "compass";
+@function image-url($relative-path) {
+   @return $relative-path;
+}
 // Bootstrap
     @import "variables";
     @import "variables-material";

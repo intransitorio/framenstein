@@ -12,6 +12,9 @@ or [download it](https://github.com/intransitorio/framenstein/zipball/master)
 ## Instructions to set the project name in htaccess
 In htaccess.example search for framenstein and rename it to your project name
 
+## Instructions to edit your gulpfile.js
+Change the framenstein value in `var $project = 'framenstein' ` with your project name
+
 ## Instructions install all the default components
 Open the project folder in terminal and run the command below: <br>
 `cp .htaccess.example .htaccess && cd application/ && cp .env.example .env && bower install && sudo npm install`

@@ -1,4 +1,6 @@
 $(window).on("load", function() {
+    // Inicializa o material design
+      $.material.init();
     // Carrossel fundo home
         // $('.carrossel-fundo .carrossel').each(function(){
         //     $(this).carouFredSel({
