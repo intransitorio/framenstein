@@ -9,7 +9,7 @@ var $config = {
         'type': 'sass',
         'name': 'all',
         'path': [
-            appPath('assets/css/vendor/*.css'),
+            // appPath('assets/css/vendor/*.css'),
             appPath('assets/css/custom/*.css'),
         ],
         'build': basePath('build/css'),
@@ -54,6 +54,12 @@ var $config = {
             bowerPath('bootstrap-sass/assets/fonts/**/*'),
         ],
         'build': basePath('build/fonts'),
+    },
+    'site-html': {
+        'type': 'html',
+        'path': [
+            basePath(''),
+        ],
     },
 };
 
@@ -110,6 +116,14 @@ var $tasks = [
         'config' : $config['site-fonts'],
         'task'   : 'site-fonts',
     },
+    {
+        'config' : $config['site-html'],
+        'path': {
+            'origin' : basePath(''),
+            'destiny': basePath(''),
+        },
+        'task'   : 'site-html',
+    },
 ];
 
 
@@ -133,6 +147,10 @@ var $fileTypes = {
     'javascript': {
         'origin' : 'js',
         'destiny': 'js',
+    },
+    'html': {
+        'origin' : 'php',
+        'destiny': 'php',
     },
 };
 
@@ -254,6 +272,13 @@ function makeTask( $i ) {
                 .pipe(copy())
                 .pipe(gulp.dest($tasks[$i]['config']['build']))
         });
+    } else if( ['html'].indexOf($tasks[$i]['config']['type'])!=(-1) ) {
+        $sequence.push('build'+$i);
+        gulp.task('build'+$i, function() {
+            return gulp
+                .src($tasks[$i]['config']['path'])
+                .pipe(browserSync.reload({stream:true}));
+        });
     }
 
     if( ['sass','javascript'].indexOf($tasks[$i]['config']['type'])!=(-1) ) {
@@ -268,7 +293,7 @@ function makeTask( $i ) {
         });
     }
 
-    if( ['sass','javascript','font','image'].indexOf($tasks[$i]['config']['type'])!=(-1) ) {
+    if( ['sass','javascript','font','image', 'html'].indexOf($tasks[$i]['config']['type'])!=(-1) ) {
         gulp.task('runsequence'+$i, function(fn) {
             return runSequence.apply(this, $sequence.concat(fn))
         });
@@ -280,7 +305,7 @@ function makeTask( $i ) {
         });
     }
 
-    if( ['sass','javascript'].indexOf($tasks[$i]['config']['type'])!=(-1) ) {
+    if( ['sass','javascript', 'html'].indexOf($tasks[$i]['config']['type'])!=(-1) ) {
         $watch.push('watch'+$i);
         gulp.task('watch'+$i, function() {
             gulp.watch($tasks[$i]['path']['origin']+'/**/*.'+$fileTypes[$tasks[$i]['config']['type']]['origin'], ['runsequence'+$i]);
