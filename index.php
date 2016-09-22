@@ -5,15 +5,6 @@
 </head>
 <body onload="$('.loader').removeClass('loading');">
   <?php include("include/loader.php"); ?>
-  <!--
-    <div class="carrossel-wrapper carrossel-fundo">
-      <div class="carrossel">
-        <img class="item" src="assets/img/bg/home-1.jpg" alt="">
-        <img class="item" src="assets/img/bg/home-2.jpg" alt="">
-        <img class="item" src="assets/img/bg/home-3.jpg" alt="">
-      </div>
-    </div>
-  -->
   <div id="wrapper">
     <?php include("include/header.php"); ?>
     <div id="content">
