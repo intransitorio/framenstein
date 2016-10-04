@@ -1,30 +1,6 @@
 $(window).on("load", function() {
-    // Inicializa o material design
-      $.material.init();
-    // Carrossel fundo home
-        // $('.carrossel-fundo .carrossel').each(function(){
-        //     $(this).carouFredSel({
-        //         auto         : {
-        //             play     : true,
-        //             timeoutDuration: 3500
-        //         },
-        //         swipe        : true,
-        //         width        : '100%',
-        //         height       : $(this).data('height'),
-        //         responsive   : true,
-        //         items        : {
-        //             height   : 'variable',
-        //             visible  : 1
-        //         },
-        //         scroll       : {
-        //             duration : 250,
-        //             items    : 1,
-        //             fx       : 'crossfade'
-        //         }
-        //     });
-        // })
     // Smooth Scroll
-        $('a').filter(function(){
+        $('a').not('.institutional-tab-content a').filter(function(){
             return ($(this).attr('href')||'').match(/^#.+$/);
         }).on( 'click', function($event) {
             $click_nav = true;
@@ -49,7 +25,7 @@ $(window).on("load", function() {
     // Padrão Fancybox
         $(".fancybox").fancybox({
             padding     : 0,
-            margin      : 0,
+            margin      : 40,
             helpers: {
                 overlay: {
                   locked: false

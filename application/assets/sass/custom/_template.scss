@@ -8,19 +8,20 @@
    @ Template
 ========================================================================== */
 
-    html, body{height: 100%;}
-    body > #wrapper{height: auto; min-height: 100%; overflow-x: hidden}
+html, body{height: 100%;}
 
 
-    #wrapper{
-        position: relative;
-    }
+#wrapper{
+  height: auto;
+  min-height: 100%;
+  overflow-x: hidden;
+  position: relative;
+  #content {
+    @extend .container;
+  }
+}
 
 
-    #content {
-        @extend .container;
-
-    }
 
 
 /* ==========================================================================
