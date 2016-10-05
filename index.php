@@ -47,12 +47,10 @@
                 Lorem ipsum dolor sit amet
               </h1>
               <p>
-                , consectetur adipisicing elit. Numquam eos illo inventore, voluptatum nam perferendis natus, aliquid quaerat vel illum distinctio earum consequatur pariatur id ea deserunt atque dicta ad.</p>
-
+                , consectetur adipisicing elit. Numquam eos illo inventore, voluptatum nam perferendis natus, aliquid quaerat vel illum distinctio earum consequatur pariatur id ea deserunt atque dicta ad.
               </p>
             </div>
           </div>
-          ...
         </div>
       </div>
     </div>
