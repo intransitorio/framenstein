@@ -386,7 +386,7 @@ for( var $i in $tasks ) {
 gulp.task('serve', $watch, function() {
     browserSync.init({
         open : true,
-        proxy: basePath().search('local.woodoo')!=(-1) ? 'http://local.woodoo.com.br/'+$project+'/' : 'http://localhost:8989/'+$project+'/'+$project+'/',
+        proxy: basePath().search('local.woodoo')!=(-1) ? 'http://local.woodoo.com.br/'+$project+'/' : 'http://localhost/'+$project+'/'+$project+'/',
     });
 });
 

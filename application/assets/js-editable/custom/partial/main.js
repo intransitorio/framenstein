@@ -1,41 +1,30 @@
 $(window).on("load", function() {
     // Smooth Scroll
-        $('a').not('.institutional-tab-content a').filter(function(){
-            return ($(this).attr('href')||'').match(/^#.+$/);
-        }).on( 'click', function($event) {
-            $click_nav = true;
-            var $this = $(this);
-            $event.preventDefault();
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-             var target = $(this.hash);
-             target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-             if (target.length) {
-                 $('.logo').addClass('scrolling');
-                 $('html,body').animate({
+    $('a.smooth').filter(function(){
+       return ($(this).attr('href')||'').match(/^#.+$/);
+    }).on( 'click', function(e) {
+       e.preventDefault();
+
+       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+           var byId, byName;
+           var target = (byId = $(this.hash)).length ? byId : ((byName = $('[name='+this.hash.slice(1) +']')).length ? byName : false);
+
+           if(target) {
+               $('html,body').animate({
                    scrollTop: target.offset().top
-                 }, 1000, function() {
-                     $click_nav = false;
-                     $(window).trigger('scroll');
-                     $('.logo').removeClass('scrolling');
-                     //window.location.hash = $this.attr("href");
-                 });
-             }
-            }
-        });
+               }, 1000);
+           }
+       }
+    });
     // Padrão Fancybox
-        $(".fancybox").fancybox({
-            padding     : 0,
-            margin      : 40,
-            helpers: {
-                overlay: {
-                  locked: false
-                }
-            }
-        });
+        // $(".fancybox").fancybox({
+        //     padding     : 0,
+        //     margin      : 40,
+        //     helpers: {
+        //         overlay: {
+        //           locked: false
+        //         }
+        //     }
+        // });
 });
-
-$(window).on("resize", function() {
-// do something
-});
-
 

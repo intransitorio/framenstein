@@ -75,7 +75,7 @@
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="#about" class="smooth">About</a></li>
           <li><a href="#contact">Contact</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -144,7 +144,7 @@
     </p>
 
 
-    <div class="page-header">
+    <div id="about" class="page-header">
       <h1>Tables</h1>
     </div>
     <div class="row">
@@ -365,7 +365,7 @@
     </ul>
 
 
-    <div class="page-header">
+    <div id="contact" class="page-header">
       <h1>Dropdown menus</h1>
     </div>
     <div class="dropdown theme-dropdown clearfix">
