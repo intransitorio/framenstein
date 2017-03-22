@@ -1,0 +1,74 @@
+@-webkit-keyframes loaderLoop {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+
+@keyframes loaderLoop {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+.modal-backdrop{
+	background: rgba(#333,0.8);
+	opacity: 1;
+	.in{
+	opacity: 1;
+
+	}
+}
+
+.st0{fill: #fff;}
+.st2{fill: rgba(#fff, 0.8);}
+.st5{fill: rgba(#fff, 0.6);}
+.st4{fill: rgba(#fff, 0.4);}
+.st1{fill: rgba(#fff, 0.2);}
+.st3{fill:rgba(#fff, 0.05);} //ultimos 2
+
+.loader{
+	height: 0;
+	left: 0;
+	opacity: 0;
+	position: fixed;
+	top: 0;
+	width: 0;
+	z-index: 9999;
+	&.inner{
+		background: rgba(#333,0.8);
+	}
+	&.outter{
+		background: #333;
+	}
+	@include transition(opacity 0.5s ease-in-out, 0s width 1s linear, 0s height 1s linear);
+
+	.icon{
+		content: '';
+		height: 50px;
+		left: 50%;
+		margin: -25px 0 0 -25px;
+		position: absolute;
+		top: 50%;
+		width: 50px;
+		@include animation-delay(0);
+		@include animation-duration(2s);
+		@include animation-name(loaderLoop);
+		@include animation-iteration-count(infinite);
+	}
+
+	&.loading{
+		height: 100%;
+		opacity: 1;
+		width: 100%;
+
+		@include transition(opacity 0s ease-in-out, 0s width 0s linear, 0s height 0s linear);
+	}
+}

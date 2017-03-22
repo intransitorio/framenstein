@@ -4,7 +4,12 @@
 // Fonts
 
 // Estilos principais
+@import "reset";
 @import "selection";
 @import "template";
+@import "forms";
+@import "modals";
+@import "loader";
+@import "viewport-helper";
 @import "helper-classes";
 @import "media-queries";

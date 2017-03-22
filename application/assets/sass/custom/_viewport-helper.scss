@@ -1,0 +1,47 @@
+.viewport-helper{
+    position: fixed;
+    left: 5px;
+    top: 0;
+    z-index: 999999999;
+    color: #000;
+    background: #fff;
+    padding: 5px 15px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 1px 3px rgba(#000,0.3), 0 1px 2px rgba(#000,0.2) inset, 0 -2px 8px rgba(#000,0.2) inset;
+    text-transform: uppercase;
+    display: block;
+    // display: none;
+    opacity: 0.9;
+    font-size: $font-size-base;
+    // Viewport guide
+        @media (max-width: $screen-xs-min) {
+            &:before{
+                content: '<= xs 480';
+            }
+        }
+        @media (min-width: $screen-xs-min) {
+            &:before{
+                content: 'xs 480-768';
+            }
+        }
+        @media (min-width: $screen-sm-min) {
+            &:before{
+                content: 'sm 768-992';
+            }
+        }
+        @media (min-width: $screen-md-min) {
+            &:before{
+                content: 'md 992-1200';
+            }
+        }
+        @media (min-width: $screen-lg-min) {
+            &:before{
+                content: 'lg =>1200';
+            }
+        }
+        @media (min-width: $grid-float-breakpoint) {
+            &:before{
+                // content: 'Broke the point';
+            }
+        }
+}

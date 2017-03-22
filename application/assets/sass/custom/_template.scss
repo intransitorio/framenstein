@@ -1,30 +1,14 @@
 /* ==========================================================================
-   Plugins
+	 Specific HTML Modifications
 ========================================================================== */
-
-    /* Estilos Específicos deste site */
-
-/* ==========================================================================
-   @ Template
-========================================================================== */
-
-html, body{height: 100%;}
-
-
-#wrapper{
-  height: auto;
-  min-height: 100%;
-  overflow-x: hidden;
-  position: relative;
-  #content {
-    @extend .container;
-  }
-}
-
-
-
-
-/* ==========================================================================
-   INTERNAS
-========================================================================== */
+	#wrapper{
+		height: auto;
+		min-height: 100%;
+		overflow-x: hidden;
+		position: relative;
+		padding-top: 25px;
+		#content {
+			@extend .container;
+		}
+	}
 

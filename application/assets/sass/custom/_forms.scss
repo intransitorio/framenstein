@@ -1,0 +1,32 @@
+.form-wrapper{
+    @extend .clearfix;
+    padding-bottom: 15px;
+    .field-wrapper{
+        @extend .form-group;
+        @include make-xs-column(12);
+        position: relative;
+        &.half{
+            @include make-sm-column(6);
+        }
+        &.quarter{
+            @include make-xs-column(6);
+            @include make-sm-column(3);
+        }
+        &.eighth{
+            @include make-xs-column(6);
+            @include make-sm-column(2);
+        }
+        .field{
+            @extend .form-control;
+        }
+        .icon-wrapper{
+            position: absolute;
+            right: 20px;
+            bottom: 0;
+            .icon{
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}

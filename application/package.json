@@ -12,5 +12,14 @@
     "gulp-rev": "^7.0.0",
     "gulp-uglify": "^1.5.3",
     "run-sequence": "^1.2.1"
+  },
+  "dependencies": {
+    "browser-sync": "^2.18.8",
+    "graceful-fs": "^4.1.11",
+    "gulp-concat": "^2.6.1",
+    "gulp-include": "^2.3.1",
+    "gulp-rev": "^7.1.2",
+    "gulp-uglify": "^1.5.4",
+    "run-sequence": "^1.2.2"
   }
 }

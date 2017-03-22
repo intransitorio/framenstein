@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+html{
+    min-height: 100%;
+    height: 100%;
+}
+body{
+    min-height: 100%;
+    font-family: 'Raleway', sans-serif;
+    // -webkit-font-smoothing: antialiased;
+    // -moz-osx-font-smoothing: antialiased;
+    padding-top: 50px;
+}
+h1, h2, h3, h4{
+    font-family: 'Raleway', sans-serif;
+    // -webkit-font-smoothing: antialiased;
+    // -moz-osx-font-smoothing: antialiased;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="number"], textarea{
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: inherit;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+        color: inherit;
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+        color: inherit;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+        color: inherit;
+    }
+}
+.icon-wrapper{
+    .icon{
+        @include transition(all 150ms ease);
+    }
+    &:hover, &:active, &:focus{
+        .icon{
+            @include transform(scale(1.2));
+        }
+    }
+}
+a, button{
+    &:focus, &:active{
+        outline: none !important;
+    }
+}
