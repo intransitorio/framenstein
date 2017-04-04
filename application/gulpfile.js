@@ -42,7 +42,6 @@ var $config = {
     'site-images-css': {
         'type': 'image',
         'path': [
-            bowerPath('fancybox/source/*'),
             bowerPath('chosen/public/*'),
         ],
         'build': basePath('build/css'),

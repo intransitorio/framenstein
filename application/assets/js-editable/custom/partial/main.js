@@ -16,15 +16,5 @@ $(window).on("load", function() {
            }
        }
     });
-    // Padrão Fancybox
-        // $(".fancybox").fancybox({
-        //     padding     : 0,
-        //     margin      : 40,
-        //     helpers: {
-        //         overlay: {
-        //           locked: false
-        //         }
-        //     }
-        // });
 });
 
