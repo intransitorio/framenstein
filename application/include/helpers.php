@@ -46,7 +46,7 @@ if (! function_exists('root_path')) {
     function root_path( $customPath = '' )
     {
         $appFolder   = DIRECTORY_SEPARATOR.'application';
-        $path        = getcwd();
+        $path        = str_replace('\\', '/', getcwd());
 
         if( substr($path, -strlen($appFolder))==$appFolder ) {
             $path = substr($path, 0, -strlen($appFolder));
