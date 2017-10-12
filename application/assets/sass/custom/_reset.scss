@@ -32,11 +32,11 @@ input[type="text"], input[type="email"], input[type="password"], input[type="num
 }
 .icon-wrapper{
     .icon{
-        @include transition(all 150ms ease);
+        transition(all 150ms ease);
     }
     &:hover, &:active, &:focus{
         .icon{
-            @include transform(scale(1.2));
+            transform(scale(1.2));
         }
     }
 }

@@ -5,8 +5,8 @@ var bowerPath = function(path) { return __dirname+'/bower_components'+(path?'/'+
 var $project = 'framenstein';
 
 var $config = {
-    'site-sass': {
-        'type': 'sass',
+    'site-stylus': {
+        'type': 'stylus',
         'name': 'all',
         'path': [
             // appPath('assets/css/vendor/*.css'),
@@ -50,7 +50,7 @@ var $config = {
         'type': 'font',
         'path': [
             appPath('assets/fonts/**/*'),
-            bowerPath('bootstrap-sass/assets/fonts/**/*'),
+            bowerPath('bootstrap-stylus/fonts/**/*'),
         ],
         'build': basePath('build/fonts'),
     },
@@ -64,20 +64,20 @@ var $config = {
 
 var $tasks = [
     {
-        'config' : $config['site-sass'],
+        'config' : $config['site-stylus'],
         'path': {
-            'origin' : appPath('assets/sass/vendor'),
+            'origin' : appPath('assets/stylus/vendor'),
             'destiny': appPath('assets/css/vendor'),
         },
-        'task': 'site-sass-vendor',
+        'task': 'site-stylus-vendor',
     },
     {
-        'config' : $config['site-sass'],
+        'config' : $config['site-stylus'],
         'path': {
-            'origin' : appPath('assets/sass/custom'),
+            'origin' : appPath('assets/stylus/custom'),
             'destiny': appPath('assets/css/custom'),
         },
-        'task': 'site-sass-custom',
+        'task': 'site-stylus-custom',
     },
     {
         'config' : $config['site-javascript'],
@@ -139,8 +139,8 @@ var runSequence = require('run-sequence');
 var uglify      = require('gulp-uglify');
 
 var $fileTypes = {
-    'sass': {
-        'origin' : 'scss',
+    'stylus': {
+        'origin' : 'styl',
         'destiny': 'css',
     },
     'javascript': {
@@ -160,7 +160,7 @@ function makeTask( $i ) {
 
     var $sequence = [];
 
-    if( ['sass','javascript'].indexOf($tasks[$i]['config']['type'])!=(-1) ) {
+    if( ['stylus','javascript'].indexOf($tasks[$i]['config']['type'])!=(-1) ) {
         $sequence.push('clean'+$i);
         gulp.task('clean'+$i, function() {
             return gulp
@@ -192,15 +192,15 @@ function makeTask( $i ) {
         });
     }
 
-    if( ['sass'].indexOf($tasks[$i]['config']['type'])!=(-1) ) {
+    if( ['stylus'].indexOf($tasks[$i]['config']['type'])!=(-1) ) {
         $sequence.push('proccess'+$i);
         gulp.task('proccess'+$i, function() {
             return gulp
-                .src($tasks[$i]['path']['origin']+'/*.scss')
+                .src($tasks[$i]['path']['origin']+'/*.styl')
                 .pipe(compass({
                     style        : 'compressed',
                     environment  : 'production',
-                    sass         : $tasks[$i]['path']['origin'],
+                    stylus         : $tasks[$i]['path']['origin'],
                     css          : $tasks[$i]['path']['destiny'],
                     import_path  : [
                         appPath(''),
@@ -228,7 +228,7 @@ function makeTask( $i ) {
         });
     }
 
-    if( ['sass','javascript'].indexOf($tasks[$i]['config']['type'])!=(-1) ) {
+    if( ['stylus','javascript'].indexOf($tasks[$i]['config']['type'])!=(-1) ) {
         $sequence.push('build'+$i);
         gulp.task('build'+$i, function() {
             return gulp
@@ -280,7 +280,7 @@ function makeTask( $i ) {
         });
     }
 
-    if( ['sass','javascript'].indexOf($tasks[$i]['config']['type'])!=(-1) ) {
+    if( ['stylus','javascript'].indexOf($tasks[$i]['config']['type'])!=(-1) ) {
         $sequence.push('publish'+$i);
         gulp.task('publish'+$i, function() {
             return gulp
@@ -292,7 +292,7 @@ function makeTask( $i ) {
         });
     }
 
-    if( ['sass','javascript','font','image', 'html'].indexOf($tasks[$i]['config']['type'])!=(-1) ) {
+    if( ['stylus','javascript','font','image', 'html'].indexOf($tasks[$i]['config']['type'])!=(-1) ) {
         gulp.task('runsequence'+$i, function(fn) {
             return runSequence.apply(this, $sequence.concat(fn))
         });
@@ -304,7 +304,7 @@ function makeTask( $i ) {
         });
     }
 
-    if( ['sass','javascript', 'html'].indexOf($tasks[$i]['config']['type'])!=(-1) ) {
+    if( ['stylus','javascript', 'html'].indexOf($tasks[$i]['config']['type'])!=(-1) ) {
         $watch.push('watch'+$i);
         gulp.task('watch'+$i, function() {
             gulp.watch($tasks[$i]['path']['origin']+'/**/*.'+$fileTypes[$tasks[$i]['config']['type']]['origin'], ['runsequence'+$i]);

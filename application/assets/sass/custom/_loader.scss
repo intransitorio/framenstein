@@ -48,7 +48,7 @@
 	&.outter{
 		background: #333;
 	}
-	@include transition(opacity 0.5s ease-in-out, 0s width 1s linear, 0s height 1s linear);
+	transition(opacity 0.5s ease-in-out, 0s width 1s linear, 0s height 1s linear);
 
 	.icon{
 		content: '';
@@ -58,10 +58,10 @@
 		position: absolute;
 		top: 50%;
 		width: 50px;
-		@include animation-delay(0);
-		@include animation-duration(2s);
-		@include animation-name(loaderLoop);
-		@include animation-iteration-count(infinite);
+		animation-delay(0);
+		animation-duration(2s);
+		animation-name(loaderLoop);
+		animation-iteration-count(infinite);
 	}
 
 	&.loading{
@@ -69,6 +69,6 @@
 		opacity: 1;
 		width: 100%;
 
-		@include transition(opacity 0s ease-in-out, 0s width 0s linear, 0s height 0s linear);
+		transition(opacity 0s ease-in-out, 0s width 0s linear, 0s height 0s linear);
 	}
 }

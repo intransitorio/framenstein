@@ -3,18 +3,18 @@
     padding-bottom: 15px;
     .field-wrapper{
         @extend .form-group;
-        @include make-xs-column(12);
+        make-xs-column(12);
         position: relative;
         &.half{
-            @include make-sm-column(6);
+            make-sm-column(6);
         }
         &.quarter{
-            @include make-xs-column(6);
-            @include make-sm-column(3);
+            make-xs-column(6);
+            make-sm-column(3);
         }
         &.eighth{
-            @include make-xs-column(6);
-            @include make-sm-column(2);
+            make-xs-column(6);
+            make-sm-column(2);
         }
         .field{
             @extend .form-control;
