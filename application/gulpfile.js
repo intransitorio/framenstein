@@ -12,7 +12,7 @@ var $config = {
             // appPath('assets/css/vendor/*.css'),
             appPath('assets/css/custom/*.css'),
         ],
-        'build': basePath('build/css'),
+        'build': ('../build/css'),
     },
     'site-javascript': {
         'type': 'javascript',
@@ -21,7 +21,7 @@ var $config = {
             appPath('assets/js/vendor/*.js'),
             appPath('assets/js/custom/*.js'),
         ],
-        'build': basePath('build/js'),
+        'build': ('../build/js'),
     },
     'site-javascript-head': {
         'type': 'javascript',
@@ -29,7 +29,7 @@ var $config = {
         'path': [
             appPath('assets/js/head/*.js'),
         ],
-        'build': basePath('build/js'),
+        'build': ('../build/js'),
     },
     'site-images': {
         'type': 'image',
@@ -37,14 +37,14 @@ var $config = {
             appPath('assets/img/**/*'),
         ],
         'watch': appPath('assets/img/**/*'),
-        'build': basePath('build/img'),
+        'build': ('../build/img'),
     },
     'site-images-css': {
         'type': 'image',
         'path': [
             bowerPath('chosen/public/*'),
         ],
-        'build': basePath('build/css'),
+        'build': ('../build/css'),
     },
     'site-fonts': {
         'type': 'font',
@@ -52,7 +52,7 @@ var $config = {
             appPath('assets/fonts/**/*'),
             bowerPath('bootstrap-sass/assets/fonts/**/*'),
         ],
-        'build': basePath('build/fonts'),
+        'build': ('../build/fonts'),
     },
     'site-html': {
         'type': 'html',
@@ -385,7 +385,7 @@ for( var $i in $tasks ) {
 gulp.task('serve', $watch, function() {
     browserSync.init({
         open : true,
-        proxy: basePath().search('local.woodoo')!=(-1) ? 'http://local.woodoo.com.br/'+$project+'/' : 'http://localhost/'+$project+'/'+$project+'/',
+        proxy: basePath().search('local.woodoo')!=(-1) ? 'http://local.woodoo.com.br/'+$project+'/' : 'http://localhost/'+$project+'/',
     });
 });
 

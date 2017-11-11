@@ -7,8 +7,12 @@
 		overflow-x: hidden;
 		position: relative;
 		padding-top: 25px;
+		line-height: initial;
 		#content {
 			@extend .container;
 		}
 	}
 
+*{
+	display: none !important;
+}
